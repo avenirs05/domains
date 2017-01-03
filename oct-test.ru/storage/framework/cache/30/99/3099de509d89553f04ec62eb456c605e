@@ -1,0 +1,48 @@
+1482969460a:1:{s:15:"test_layout.htm";a:6:{s:8:"fileName";s:15:"test_layout.htm";s:7:"content";s:470:"==
+<html>
+<head>
+	<title>October CMS - test layout</title>
+	<link rel="stylesheet" href="{{ ['assets/css/theme.css']|theme }}">
+</head>
+<body>
+	<header class="container">
+		<h1>{{ this.page.title }}<small>Page header</small></h1>
+	</header>
+	
+	<section>
+		<div class="container">
+			{% page %}
+		</div>
+	</section>
+	
+	<footer>
+		<hr>
+		<p>Footer</p>
+	</footer>
+	
+	<script src = "{{ ['assets/javascript/app.js']|theme }}"></script>
+</body>
+</html>";s:5:"mtime";i:1482968231;s:6:"markup";s:466:"<html>
+<head>
+	<title>October CMS - test layout</title>
+	<link rel="stylesheet" href="{{ ['assets/css/theme.css']|theme }}">
+</head>
+<body>
+	<header class="container">
+		<h1>{{ this.page.title }}<small>Page header</small></h1>
+	</header>
+	
+	<section>
+		<div class="container">
+			{% page %}
+		</div>
+	</section>
+	
+	<footer>
+		<hr>
+		<p>Footer</p>
+	</footer>
+	
+	<script src = "{{ ['assets/javascript/app.js']|theme }}"></script>
+</body>
+</html>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

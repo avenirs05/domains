@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Создание баннера</title>
+
+	<style>
+	
+	.wrap {
+		border: 3px solid blue;
+		height: 550px;
+		width: 180px;
+		padding-left: 15px;
+		padding-top: 15px;
+		padding-bottom: 5px;
+		background-color: #E8D7D7;
+	}
+	
+	div {
+		width: 150px;
+		height: 150px;
+		border: 2px solid black;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+	
+	.red {
+		background-color: red;
+		display: none;
+		border: none;
+		border-radius: 50%;
+		width: 130px;
+		height: 130px;
+	
+	}
+	
+	.yellow {
+		background-color: yellow;
+		display: none;
+		border: none;
+		border-radius: 50%;
+		width: 130px;
+		height: 130px;
+	}
+	
+	.green {
+		background-color: green;
+		display: none;
+		border: none;
+		border-radius: 50%;
+		width: 130px;
+		height: 130px;
+	}
+	
+	</style>
+	
+    <script src="jquery-1.10.2.js"></script>
+    <script>
+
+        $(function () {
+
+			start();				
+			
+			function start () {
+				$('.red').show(0).delay(5000).hide(0, toYellow);
+			}
+				
+			function toYellow () {
+				$('.yellow').show(0).delay(5000).hide(0, toGreen);
+			}
+				
+			function toGreen () {
+				$('.green').show(0).delay(5000).hide(0, start);
+			}	
+			
+        });
+
+    </script>
+</head>
+<body>
+
+<div class="wrap">
+		<div>
+			<div class="red"></div>
+		</div>
+		<div>
+			<div class="yellow"></div>
+		</div>
+		<div>
+			<div class="green"></div>
+		</div>
+</div>
+
+</body>
+</html>

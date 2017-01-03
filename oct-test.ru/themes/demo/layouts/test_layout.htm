@@ -1,0 +1,25 @@
+==
+<html>
+<head>
+	<title>October CMS - test layout</title>
+	<link rel="stylesheet" href="{{ ['assets/css/theme.css']|theme }}">
+</head>
+<body>
+	<header class="container">
+		<h1>{{ this.page.title }}<small>Page header</small></h1>
+	</header>
+	
+	<section>
+		<div class="container">
+			{% page %}
+		</div>
+	</section>
+	
+	<footer>
+		<hr>
+		<p>Footer</p>
+	</footer>
+	
+	<script src = "{{ ['assets/javascript/app.js']|theme }}"></script>
+</body>
+</html>

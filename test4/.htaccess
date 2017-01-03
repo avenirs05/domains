@@ -1,0 +1,9 @@
+# RedirectMatch 301 (.*)\.php$ http://www.yandex.ru
+
+# Redirect 301 /index2.php /index.php
+
+
+RedirectMatch 301 (.*) http://test3
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+<link  rel="stylesheet" href="css/style.css"/>
+<link  rel="stylesheet" href="css/jquery-ui.css"/>
+<link  rel="stylesheet" href="css/jquery-ui.structure.css"/>
+<link  rel="stylesheet" href="css/jquery-ui.theme.css"/>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+	
+	<div class="wrap">
+		
+		<div class='header'>
+		</div>
+		
+		
+		
+		<div class='content'>
+			<div class="main_text">
+			
+			{
+			
+			<?		if ($result) {
+				
+					printf("<div>
+				      		<h2>%s</h2>
+				     		 <p>Дата добавления: %s</p>
+							<div>
+							<img title='%s' align='left' src='%s'><p>%s</p></td>
+				            </div>
+							",$result['title'],$result['date'],$result['title'],$result['img_src'],$result['text']);
+			}	
+			?>
+			</div>
+			
+		</div>
+		
+		<div class='footer'>
+			
+			<? echo "<p style='text-align:right;font_size:5px; color:white;margin:10px;'>".$site_name."</p>";?>
+		</div>
+	</div>
+</body>
+</html>

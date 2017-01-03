@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+<link  rel="stylesheet" href="css/style.css"/>
+<link  rel="stylesheet" href="css/jquery-ui.css"/>
+<link  rel="stylesheet" href="css/jquery-ui.structure.css"/>
+<link  rel="stylesheet" href="css/jquery-ui.theme.css"/>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+	
+	<div class="wrap">
+		
+		<div class='header'>
+		</div>
+		
+		<div class="menu">
+			<form>
+				<fieldset>
+					<label for="menu">Главное меню</label>
+					<select name="menu" id="menu">
+						
+						{%for item in cat%}
+							<option value='{{item.id_category}}'>{{item.name_category}}</option>
+						{%endfor%}
+						
+	
+					</select>
+				</fieldset>	
+			</form>	
+		</div>
+		
+		<div class='content'>
+		
+			<!--<form action="view_text.php" method="POST">
+				<input type="text" name="search" value="">
+				<input type="submit" value="OK">
+			</form>-->
+		
+			<div class="main_text">
+			
+			{%for item in statti%}
+				<div style='padding:10px;'>
+				     		 
+				      <h3><a title='{{item.title}}' href='view_text.php?id={{item.id}}'>{{item.title}}</a></h3>
+				     <p>Дата добавления: {{item.date}}</p>
+						<div>
+					<img title='%s' align='left' src='{{item.img_src}}'><p>{{item.discription}}</p>
+				        </div>
+				       </div>
+				<hr />
+			{%else%}
+			kod
+			{%endfor%}
+			</div>
+			
+		</div>
+		
+		<div class='footer'>
+			
+			<p style='text-align:right;font_size:5px; color:white;margin:10px;'>{{site_name}}</p>
+		</div>
+	</div>
+</body>
+</html>

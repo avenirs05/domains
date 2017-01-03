@@ -1,0 +1,30 @@
+div.wrap{
+	width:800px;
+	border:1px solid #074776;
+	margin:20px auto 0px auto;
+}
+
+div.header {
+	width:800px;
+	height:100px;
+}
+div.content {
+	width:780px;
+	padding:10px;
+}
+h2{
+	margin:50 0 0 0;
+	padding:0px;
+	text-align:center;
+}
+table.table{
+	border: 1px solid #d3d3d3;
+	margin:10px 0 10px;
+	padding:5px;
+}
+img {
+	margin-right:5px;
+}
+p {
+	margin-top:0;
+}

@@ -1,0 +1,12 @@
+1482969612a:1:{s:8:"menu.htm";a:6:{s:8:"fileName";s:8:"menu.htm";s:7:"content";s:191:"==
+<ul class="list-inline">
+	<li><a href="/"></a>Главная</li>
+	<li><a href="/page1"></a>page1</li>
+	<li><a href="/page2"></a>page2</li>
+	<li><a href="/page3"></a>page3</li>
+</ul>";s:5:"mtime";i:1482968954;s:6:"markup";s:187:"<ul class="list-inline">
+	<li><a href="/"></a>Главная</li>
+	<li><a href="/page1"></a>page1</li>
+	<li><a href="/page2"></a>page2</li>
+	<li><a href="/page3"></a>page3</li>
+</ul>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

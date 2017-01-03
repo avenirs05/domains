@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Создание баннера</title>
+    <script src="jquery-1.10.2.js"></script>
+    <script>
+
+        $(function () {         
+                
+				var img = $(this).data('url');				
+				$("img").attr("src", img).hide();
+				$("img").attr("src", img).show(1000);
+				
+				alert($("button").length);
+				
+        
+
+
+        });
+
+    </script>
+</head>
+<body>
+	<div style="width: 500px; height: 300px;">
+    <img src="html.jpg" width="500" height="300" data-url="html.jpg"/>
+	<img src="html5.jpg" width="500" height="300" style="display: none" data-url="html5.jpg"/>
+	<img src="jq.jpg" width="500" height="300" style="display: none" data-url="jq.jpg"/>
+	</div>
+    <br />
+	
+    <button data-url="html.jpg">1</button>
+    <button data-url="html5.jpg">2</button>
+    <button data-url="jq.jpg">3</button>
+
+</body>
+</html>
