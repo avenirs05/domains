@@ -26,6 +26,8 @@ register_sidebar(array(
 	'after_widget'  => '',
 ));
 
+add_theme_support( 'post-thumbnails' );
+
 
 
 

@@ -142,6 +142,7 @@ a {
 .header-callback-email {
 	color: #ffffff;	
 	padding-bottom: 4px;
+	text-align: right;
 }
 
 .header-callback-btn {
