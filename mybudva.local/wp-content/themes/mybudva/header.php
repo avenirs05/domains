@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> <?php wp_title(''); ?></title>
+    <title> <?php wp_title(); ?></title>
 
     <style>    
         .main-screen {
@@ -20,11 +20,6 @@
         }
     </style>
     
-<!--     <script>
-        $( function() {
-          $( "#accordion" ).accordion();
-        } );
-    </script> -->
     <?php wp_head(); ?>
 </head>
 <body>
@@ -40,24 +35,50 @@
                     <?php dynamic_sidebar('menu-header'); ?>
                 </ul> 
             </div>
-            <div class="header-right ">
-                <div class="header-phone ">
+            <div class="header-right">
+                <div class="header-phone">
                     <div class="header-phone-img glyphicon glyphicon-earphone" aria-hidden="true">      
                     </div>
-                    <div class="header-phone-digits ">
+                    <div class="header-phone-digits">
                         +382 67 258 666
                     </div>
                 </div>
-                <div class="header-callback ">
-                    <div class="header-callback-email ">
+                <div class="header-callback">
+                    <div class="header-callback-email">
                         info@mybudva.com
                     </div>
-                    <div class="header-callback-btn ">
-                        <button>ОБРАТНЫЙ ЗВОНОК</button>
+                    <div class="header-callback-btn">
+                        <button id="callback">ОБРАТНЫЙ ЗВОНОК</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>    
+</div>
+
+<div class="container-fluid visible-xs-block visible-sm-block header-mob">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="menu-mob">
+                <div class="block-in-menu-mob"></div>
+                <div class="transp-block-in-menu-mob"></div>
+                <div class="block-in-menu-mob"></div>
+                <div class="transp-block-in-menu-mob"></div>
+                <div class="block-in-menu-mob"></div>
+                <div class="transp-block-in-menu-mob"></div>
+                <div class="block-in-menu-mob"></div>
+            </div>
+            <div class="header-logo">
+                <img width="80" height="40" src="<?php bloginfo('template_url'); ?> /images/logo-white.png" alt="">
+            </div>
+            <div class="header-phone-mob">
+                <div class="header-phone-img glyphicon glyphicon-earphone " aria-hidden="true">      
+                </div>
+                <div class="header-phone-digits ">
+                    +382 67 258 666
+                </div>
+            </div>        
+        </div>    
+    </div>
 </div>
 

@@ -1,18 +1,56 @@
 <?php get_header(); ?>
 
+<div id="dialog-callback" title="">
+    <form action="action.php" method="post">
+            <span class="title-input">Имя:</span>
+            <input type="text" name="name" placeholder="Введите имя">
+            <span class="title-input">Телефон: <span class="red">*</span></span>
+            <input type="text" name="phone" placeholder="Введите номер телефона" required>
+            <input type="submit" value="Отправить">
+    </form>
+</div>
+
+<div id="dialog-partnership" title="">
+    <form action="action.php" method="post">
+            <span class="title-input">Имя:</span>
+            <input type="text" name="name" placeholder="Введите имя">
+            <span class="title-input">Телефон: <span class="red">*</span></span>
+            <input type="text" name="phone" placeholder="Введите номер телефона" required>
+            <span class="title-input">Email:</span>
+            <input type="text" name="name" placeholder="Введите имя">
+
+            <input type="submit" value="Отправить">
+    </form>
+</div>
 
 <div class="container-fluid main-screen">
     <div class="row">
-       <div class="col-md-12">
-          <h2 class="main-screen-offset">Профессиональное управление недвижимостью в Черногории</h2>
-          <h4>Ваша недвижимость перестанет быть бременем и начнет приносить доход уже летом 2017 года!</h4>
-          <div>
-              <button class="btn-begin main-screen-offset">Начать сотрудничество</button>
-          </div>
-          <h2 class="main-screen-offset">Сдаём в аренду и круглогодично обслуживаем апартаменты и виллы более 5 лет</h2>
-      </div>
+        <div class="col-md-12">
+            <h2 class="main-screen-offset">Профессиональное управление недвижимостью в Черногории</h2>
+            <h4>Ваша недвижимость перестанет быть бременем и начнет приносить доход уже летом 2017 года!</h4>
+            <div class="container-fluid visible-md-block visible-lg-block">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="btn-partnership" class="btn-begin main-screen-offset">Начать сотрудничество
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid visible-xs-block visible-sm-block">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#form-bottom">
+                            <button class="btn-begin main-screen-offset">Начать сотрудничество
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="main-screen-offset">Сдаём в аренду и круглогодично обслуживаем апартаменты и виллы более 5 лет</h2>
+        </div>
     </div>
 </div>
+
 
 <div class="container-fluid right-page">
     <div class="row">
@@ -33,7 +71,7 @@
             <?php endwhile; ?>
             <?php endif; ?>
          
-            <p class="why-need-border">Если вы не хотите сдавать в аренду вашу недвижимость, а вам просто требуется поддержание ее в надлежащем состоянии, то мы предложим программу управления без соответствующих услуг.  В этом случае мы гарантируем, что ваши расходы на содержание собственности будут минимальны, а радость от посещения Черногории не будет разбавлена неожиданными заботами.</p>   
+            <p class="why-need-border">Если вы не хотите сдавать в аренду вашу недвижимость, а вам просто требуется поддержание ее в надлежащем состоянии, то мы предложим программу управления без соответствующих услуг. В этом случае мы гарантируем, что ваши расходы на содержание собственности будут минимальны, а радость от посещения Черногории не будет разбавлена неожиданными заботами.</p>   
           
         </div>
     </div>
