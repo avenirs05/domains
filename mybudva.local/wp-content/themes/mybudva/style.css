@@ -43,7 +43,6 @@ a {
 	width: 100%;
 }
 
-
 .header-mob {
 	background-color: #697583;
 	padding-top: 10px;
@@ -69,13 +68,14 @@ a {
 	color: #ffffff;
 }
 
+#header-menu .change-color {
+	color: #B8BABD;
+}
+
 .header-menu a:hover {
 	color: #00f4dd;
 }
 
-.header-menu a:visited {
-	color: #8d7883;
-}
 
 .header-menu li {
 	display: inline-block;
@@ -118,12 +118,28 @@ a {
 .header-phone-mob {
 	float: right;
 	color: #c8fde1;
-	margin-right: 5px;
+	margin-right: 0px;
+	margin-left: 5px;
+	margin-top: 4px;
+	font-size: 22px;
+	font-family: "OpenSansCondensedLight";
+}
+
+
+.header-phone-digits-mob {
+	display: inline-block;	
+	/*font-family: "OpenSansCondensedLight";*/
+	/*font-size: 30px;*/
 }
 
 .header-phone-img {
 	display: inline-block;
 	font-size: 26px;
+}
+
+.header-phone-img-mob {
+	display: inline-block;
+	font-size: 18px;
 }
 
 .header-phone-digits {
@@ -454,19 +470,25 @@ input[type="submit"]:hover {
 input[type="submit"] {
 	width: 100%;
 	display: block;
-	min-height: 40px;
+	min-height: 60px;
 	margin-top: 26px;
-	font-size: 16pt;
+	font-size: 20pt;
 	background-color: #C1272D;
 	color: #ffffff;
 	border: none;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	border-radius: 3px;
 }
 
 #dialog-partnership 
 input[type="submit"]:hover {
 	background-color: #456990;
+}
+
+#dialog-partnership textarea {
+	display: block;
+	width: 100%;
+	color: #000000;
 }
 
 @media screen 
@@ -505,7 +527,12 @@ and (max-device-width: 767px) {
 		text-align: left;
 	}
 
+
 }
 
+/*Bootstrap переопределенные стили*/
 
+.glyphicon {
+	    top: 2px;
+}
 

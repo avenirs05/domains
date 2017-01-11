@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title> <?php wp_title(); ?></title>
+    <meta name="format-detection" content="telephone=no" />
+    <title><?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
 
     <style>    
         .main-screen {
@@ -19,6 +19,30 @@
             font-weight: normal;  
         }
     </style>
+
+    <div id="dialog-callback" title="">
+        <form action="action.php" method="post">
+                <span class="title-input">Имя:</span>
+                <input type="text" name="name" placeholder="Введите имя">
+                <span class="title-input">Телефон: <span class="red">*</span></span>
+                <input type="text" name="phone" placeholder="Введите номер телефона" required>
+                <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id="dialog-partnership" title="">
+        <form action="action.php" method="post">
+                <span class="title-input">Имя:</span>
+                <input type="text" name="name" placeholder="Введите имя">
+                <span class="title-input">Телефон: <span class="red">*</span></span>
+                <input type="text" name="phone" placeholder="Введите номер телефона" required>
+                <span class="title-input">Email:</span>
+                <input type="text" name="email" placeholder="Введите адрес электронной почты">
+                <span class="title-input">Ваше сообщение:</span>
+                <textarea rows="6" name="message" placeholder="Введите ваше сообщение"></textarea>
+                <input type="submit" value="Отправить">
+        </form>
+    </div>
     
     <?php wp_head(); ?>
 </head>
@@ -29,9 +53,9 @@
         <div class="col-md-12">
             <div class="header-left">
                 <div class="header-logo">
-                    <img src="<?php bloginfo('template_url'); ?> /images/logo-white.png" alt="">
+                    <img src="<?php bloginfo('template_url'); ?>/images/logo-white.png" alt="">
                 </div>
-                <ul class="header-menu">
+                <ul class="header-menu" id ="header-menu">
                     <?php dynamic_sidebar('menu-header'); ?>
                 </ul> 
             </div>
@@ -69,14 +93,12 @@
                 <div class="block-in-menu-mob"></div>
             </div>
             <div class="header-logo">
-                <img width="80" height="40" src="<?php bloginfo('template_url'); ?> /images/logo-white.png" alt="">
+                <img width="80" height="40" src="<?php bloginfo('template_url'); ?>/images/logo-white.png" alt="">
             </div>
             <div class="header-phone-mob">
-                <div class="header-phone-img glyphicon glyphicon-earphone " aria-hidden="true">      
+                <div class="header-phone-img-mob glyphicon glyphicon-earphone" aria-hidden="true">
                 </div>
-                <div class="header-phone-digits ">
-                    +382 67 258 666
-                </div>
+                <div class="header-phone-digits-mob">+382 67 258 666</div>
             </div>        
         </div>    
     </div>

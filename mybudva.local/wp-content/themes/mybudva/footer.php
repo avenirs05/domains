@@ -32,29 +32,44 @@
     </div>
 </div>
 
-<?php wp_footer(); ?>
-
 <script>
-    $("#callback").click(popUpCallback);
-    $("#btn-partnership").click(popUpPartnership);
 
-        function popUpCallback() {
-            $("#dialog-callback").dialog( {
-                width: 266,
-                modal: true,
-                title: false,
-            } );
-        } 
+    $(function () {
 
-        function popUpPartnership() {
-            $("#dialog-partnership").dialog( {
-                width: 266,
-                modal: true,
-                title: false,
-            } );
-        } 
+        $("#callback").click(popUpCallback);
+        $("#btn-partnership").click(popUpPartnership);
+
+            function popUpCallback() {
+                $("#dialog-callback").dialog( {
+                    width: 266,
+                    modal: true,
+                    title: false,
+                } );
+            } 
+
+            function popUpPartnership() {
+                $("#dialog-partnership").dialog( {
+                    width: 414,
+                    modal: true,
+                    title: false,
+                } );
+            } 
+    });
+
+    $(function () {
+
+        var location = window.location.href;  
+        $('.menu li a').each(function () {      
+            var link = $(this).attr('href');
+            if(location == link) { 
+                $(this).addClass('change-color');                
+            }
+        });
+         
+    });
 
 </script>
 
+<?php wp_footer(); ?>
 </body>
 </html>

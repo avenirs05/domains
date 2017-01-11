@@ -1,27 +1,6 @@
 <?php get_header(); ?>
 
-<div id="dialog-callback" title="">
-    <form action="action.php" method="post">
-            <span class="title-input">Имя:</span>
-            <input type="text" name="name" placeholder="Введите имя">
-            <span class="title-input">Телефон: <span class="red">*</span></span>
-            <input type="text" name="phone" placeholder="Введите номер телефона" required>
-            <input type="submit" value="Отправить">
-    </form>
-</div>
 
-<div id="dialog-partnership" title="">
-    <form action="action.php" method="post">
-            <span class="title-input">Имя:</span>
-            <input type="text" name="name" placeholder="Введите имя">
-            <span class="title-input">Телефон: <span class="red">*</span></span>
-            <input type="text" name="phone" placeholder="Введите номер телефона" required>
-            <span class="title-input">Email:</span>
-            <input type="text" name="name" placeholder="Введите имя">
-
-            <input type="submit" value="Отправить">
-    </form>
-</div>
 
 <div class="container-fluid main-screen">
     <div class="row">
