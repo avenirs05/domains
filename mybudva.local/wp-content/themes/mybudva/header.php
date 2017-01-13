@@ -19,37 +19,6 @@
             font-weight: normal;  
         }
     </style>
-
-    <div id="dialog-callback" title="">
-        <form action="action.php" method="post">
-                <span class="title-input">Имя:</span>
-                <input type="text" name="name" placeholder="Введите имя">
-                <span class="title-input">Телефон: <span class="red">*</span></span>
-                <input type="text" name="phone" placeholder="Введите номер телефона" required>
-                <input type="submit" value="Отправить">
-        </form>
-    </div>
-
-    <div id="dialog-partnership" title="">
-        <form action="action.php" method="post">
-                <span class="title-input">Имя:</span>
-                <input type="text" name="name" placeholder="Введите имя">
-                <span class="title-input">Телефон: <span class="red">*</span></span>
-                <input type="text" name="phone" placeholder="Введите номер телефона" required>
-                <span class="title-input">Email:</span>
-                <input type="text" name="email" placeholder="Введите адрес электронной почты">
-                <span class="title-input">Ваше сообщение:</span>
-                <textarea rows="6" name="message" placeholder="Введите ваше сообщение"></textarea>
-                <input type="submit" value="Отправить">
-        </form>
-    </div>
-
-    <div id="dialog-menu-mob" title="">
-        <ul>  
-            hello
-            <?php dynamic_sidebar('menu-header'); ?>
-        </ul>  
-    </div>
     
 <?php wp_head(); ?>    
 </head>

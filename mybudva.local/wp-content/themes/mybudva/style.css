@@ -563,8 +563,7 @@ button[type=button] {
     border-radius: 0;
 }
 
-div[aria-describedby=dialog-menu-mob] .menu li {
-	background-color: #028090;
+div[aria-describedby=dialog-menu-mob] .menu li {	
 	margin-bottom: 3px;
 	width: 100%;
 	border: none;
@@ -578,6 +577,15 @@ a {
 	font-size: 32px;
 	padding-left: 10px;
 	border: none;
+	outline: none;	
+	background-color: #028090;
+	width: 100%;
+	display: block;
+}
+
+div[aria-describedby=dialog-menu-mob] 
+a:active {
+	background-color: #C1272D;
 }
 
 div[aria-describedby=dialog-menu-mob] 

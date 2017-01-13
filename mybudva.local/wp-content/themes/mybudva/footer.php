@@ -1,7 +1,7 @@
 <div class="container-fluid footer">
     <div class="row">
         <div class="col-md-12">   
-            <form id="form-bottom" action="action.php" method="post">
+            <form id="form-bottom" action="<?php bloginfo('template_url'); ?>/action.php" method="post">
                 <div class="row">
                     <div class="col-md-4">
                         <span class="title-input">Имя:</span>
@@ -30,6 +30,38 @@
             </form>
         </div>
     </div>
+</div>
+
+<!-- Спрятанные блоки jquery -->
+
+<div id="dialog-callback" title="">
+    <form action="<?php bloginfo('template_url'); ?>/action.php" method="post">
+            <span class="title-input">Имя:</span>
+            <input type="text" name="name" placeholder="Введите имя">
+            <span class="title-input">Телефон: <span class="red">*</span></span>
+            <input type="text" name="phone" placeholder="Введите номер телефона" required>
+            <input type="submit" value="Отправить">
+    </form>
+</div>
+
+<div id="dialog-partnership" title="">
+    <form action="<?php bloginfo('template_url'); ?>/action.php" method="post">
+            <span class="title-input">Имя:</span>
+            <input type="text" name="name" placeholder="Введите имя">
+            <span class="title-input">Телефон: <span class="red">*</span></span>
+            <input type="text" name="phone" placeholder="Введите номер телефона" required>
+            <span class="title-input">Email:</span>
+            <input type="text" name="email" placeholder="Введите адрес электронной почты">
+            <span class="title-input">Ваше сообщение:</span>
+            <textarea rows="6" name="message" placeholder="Введите ваше сообщение"></textarea>
+            <input type="submit" value="Отправить">
+    </form>
+</div>
+
+<div id="dialog-menu-mob" title="">
+    <ul>
+        <?php dynamic_sidebar('menu-header'); ?>
+    </ul>  
 </div>
 
 <script>

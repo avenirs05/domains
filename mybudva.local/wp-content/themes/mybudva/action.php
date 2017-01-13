@@ -1,17 +1,4 @@
-﻿<div style="text-align: center;
-        background: #689DEC;
-        display: block;
-        margin: 10% auto 0;
-        width: 40%;
-        font-size: 20px;
-        padding: 2em;
-        color: #fff;
-        font-family: Verdana, sans-serif;
-        border-radius: 5px;">Ваша заявка успешно отправлена! 
-Специалист свяжется с Вами в ближайшее время.
-</div>
-
-<?php
+﻿<?php
 
     if(!empty($_POST["phone"])){
         
@@ -54,12 +41,14 @@
         background: #689DEC;
         display: block;
         margin: 10% auto 0;
-        width: 17%;
+        width: 40%;
         font-size: 20px;
         padding: 2em;
         color: #fff;
         font-family: Verdana, sans-serif;
-        border-radius: 5px;">Ваше сообщение отправлено!</div>';
+        border-radius: 5px;">Ваша заявка успешно отправлена! 
+        Специалист свяжется с Вами в ближайшее время.
+        </div>';
         
     }
 
