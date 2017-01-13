@@ -452,3 +452,17 @@ a.ui-button:active,
 .ui-dialog .ui-dialog-titlebar-close {
 	margin: -10px -5px 0 0;
 }
+
+
+
+/*div[aria-describedby=dialog-menu-mob].ui-widget.ui-widget-content {
+	border: none;
+}*/
+
+
+@media screen 
+and (max-device-width: 767px) {
+	.ui-widget.ui-widget-content {
+		border: none;
+	}
+}

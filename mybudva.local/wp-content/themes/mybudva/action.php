@@ -1,4 +1,17 @@
-﻿<?php
+﻿<div style="text-align: center;
+        background: #689DEC;
+        display: block;
+        margin: 10% auto 0;
+        width: 40%;
+        font-size: 20px;
+        padding: 2em;
+        color: #fff;
+        font-family: Verdana, sans-serif;
+        border-radius: 5px;">Ваша заявка успешно отправлена! 
+Специалист свяжется с Вами в ближайшее время.
+</div>
+
+<?php
 
     if(!empty($_POST["phone"])){
         
@@ -35,7 +48,7 @@
         ';
         
         //SendMail($admin_email, $user_email, $subject, $msg, $headers);
-        mail("avenirs05@gmail.com", $subject, $message, $headers);
+        mail("info@mybudva.com", $subject, $message, $headers);
         
         echo '<div style="text-align: center;
         background: #689DEC;

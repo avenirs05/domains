@@ -43,8 +43,15 @@
                 <input type="submit" value="Отправить">
         </form>
     </div>
+
+    <div id="dialog-menu-mob" title="">
+        <ul>  
+            hello
+            <?php dynamic_sidebar('menu-header'); ?>
+        </ul>  
+    </div>
     
-    <?php wp_head(); ?>
+<?php wp_head(); ?>    
 </head>
 <body>
 
@@ -53,7 +60,7 @@
         <div class="col-md-12">
             <div class="header-left">
                 <div class="header-logo">
-                    <img src="<?php bloginfo('template_url'); ?>/images/logo-white.png" alt="">
+                    <img src="<?php bloginfo('template_url');?>/images/logo-white.png" alt="">
                 </div>
                 <ul class="header-menu" id ="header-menu">
                     <?php dynamic_sidebar('menu-header'); ?>
@@ -80,10 +87,10 @@
     </div>    
 </div>
 
-<div class="container-fluid visible-xs-block visible-sm-block header-mob">
+<div class="container-fluid visible-xs-block visible-sm-block header-mob" id="to-fixed-mob">
     <div class="row">
         <div class="col-md-12">
-            <div class="menu-mob">
+            <div id="menu-mob" class="menu-mob">
                 <div class="block-in-menu-mob"></div>
                 <div class="transp-block-in-menu-mob"></div>
                 <div class="block-in-menu-mob"></div>

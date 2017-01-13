@@ -35,12 +35,14 @@
 <script>
 
     $(function () {
-
         $("#callback").click(popUpCallback);
         $("#btn-partnership").click(popUpPartnership);
+        $("#menu-mob").click(popUpMenuMob);
 
             function popUpCallback() {
                 $("#dialog-callback").dialog( {
+                    resizable: false,
+                    draggable: false,
                     width: 266,
                     modal: true,
                     title: false,
@@ -49,23 +51,36 @@
 
             function popUpPartnership() {
                 $("#dialog-partnership").dialog( {
+                    resizable: false,
+                    draggable: false,
                     width: 414,
                     modal: true,
                     title: false,
                 } );
             } 
+
+            function popUpMenuMob() {
+                $("#dialog-menu-mob").dialog( {
+                    resizable: false,
+                    draggable: false,
+                    position: "left top",
+                    show: 'slide',
+                    width: 235,
+                    modal: true,
+                    title: false,
+                    dialogClass: "dialog-bg",
+                } );
+            } 
     });
 
     $(function () {
-
         var location = window.location.href;  
         $('.menu li a').each(function () {      
             var link = $(this).attr('href');
             if(location == link) { 
                 $(this).addClass('change-color');                
             }
-        });
-         
+        });         
     });
 
 </script>
